@@ -14,7 +14,7 @@ struct MainView: View {
 		VStack(spacing: 0){
 			VStack { //Informacion
 				Text(
-					"\(viewModel.locationManager.location?.coordinate.latitude) \( viewModel.locationManager.location?.coordinate.longitude)")
+					"\(viewModel.locationManager.location?.coordinate.latitude ?? 0.0) \( viewModel.locationManager.location?.coordinate.longitude ?? 0.0)")
 				if let clientSelectedCity = viewModel.climaCity[viewModel.clientSelectedCity] {
 					Text("La temperatura es: \(clientSelectedCity.temperatura)")
 				} else {
