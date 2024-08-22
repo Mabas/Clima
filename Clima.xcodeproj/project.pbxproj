@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		2980ED092C77A75F00681882 /* ClimaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2980ED082C77A75F00681882 /* ClimaApp.swift */; };
-		2980ED0B2C77A75F00681882 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2980ED0A2C77A75F00681882 /* ContentView.swift */; };
+		2980ED0B2C77A75F00681882 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2980ED0A2C77A75F00681882 /* MainView.swift */; };
 		2980ED0D2C77A76000681882 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2980ED0C2C77A76000681882 /* Assets.xcassets */; };
 		2980ED102C77A76000681882 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2980ED0F2C77A76000681882 /* Preview Assets.xcassets */; };
 		2980ED1A2C77A76000681882 /* ClimaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2980ED192C77A76000681882 /* ClimaTests.swift */; };
 		2980ED242C77A76000681882 /* ClimaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2980ED232C77A76000681882 /* ClimaUITests.swift */; };
 		2980ED262C77A76000681882 /* ClimaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2980ED252C77A76000681882 /* ClimaUITestsLaunchTests.swift */; };
+		2980ED332C77BE6700681882 /* Clima.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2980ED322C77BE6700681882 /* Clima.swift */; };
+		2980ED352C77BE6E00681882 /* Ciudad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2980ED342C77BE6E00681882 /* Ciudad.swift */; };
+		2980ED372C77BE7500681882 /* ClimaCiudad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2980ED362C77BE7500681882 /* ClimaCiudad.swift */; };
+		2980ED3B2C77BF7100681882 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2980ED3A2C77BF7100681882 /* MainViewModel.swift */; };
+		2980ED402C77E7AB00681882 /* CoreLocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2980ED3F2C77E7AB00681882 /* CoreLocationHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,7 @@
 /* Begin PBXFileReference section */
 		2980ED052C77A75F00681882 /* Clima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clima.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2980ED082C77A75F00681882 /* ClimaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimaApp.swift; sourceTree = "<group>"; };
-		2980ED0A2C77A75F00681882 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2980ED0A2C77A75F00681882 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		2980ED0C2C77A76000681882 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2980ED0F2C77A76000681882 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2980ED152C77A76000681882 /* ClimaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClimaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +49,11 @@
 		2980ED1F2C77A76000681882 /* ClimaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClimaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2980ED232C77A76000681882 /* ClimaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimaUITests.swift; sourceTree = "<group>"; };
 		2980ED252C77A76000681882 /* ClimaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2980ED322C77BE6700681882 /* Clima.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clima.swift; sourceTree = "<group>"; };
+		2980ED342C77BE6E00681882 /* Ciudad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ciudad.swift; sourceTree = "<group>"; };
+		2980ED362C77BE7500681882 /* ClimaCiudad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimaCiudad.swift; sourceTree = "<group>"; };
+		2980ED3A2C77BF7100681882 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		2980ED3F2C77E7AB00681882 /* CoreLocationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				2980ED082C77A75F00681882 /* ClimaApp.swift */,
-				2980ED0A2C77A75F00681882 /* ContentView.swift */,
+				2980ED382C77BE7F00681882 /* Models */,
+				2980ED392C77BF1F00681882 /* Main */,
 				2980ED0C2C77A76000681882 /* Assets.xcassets */,
 				2980ED0E2C77A76000681882 /* Preview Content */,
 			);
@@ -125,6 +136,26 @@
 				2980ED252C77A76000681882 /* ClimaUITestsLaunchTests.swift */,
 			);
 			path = ClimaUITests;
+			sourceTree = "<group>";
+		};
+		2980ED382C77BE7F00681882 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2980ED322C77BE6700681882 /* Clima.swift */,
+				2980ED342C77BE6E00681882 /* Ciudad.swift */,
+				2980ED362C77BE7500681882 /* ClimaCiudad.swift */,
+				2980ED3F2C77E7AB00681882 /* CoreLocationHandler.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2980ED392C77BF1F00681882 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2980ED0A2C77A75F00681882 /* MainView.swift */,
+				2980ED3A2C77BF7100681882 /* MainViewModel.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +288,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2980ED0B2C77A75F00681882 /* ContentView.swift in Sources */,
+				2980ED0B2C77A75F00681882 /* MainView.swift in Sources */,
+				2980ED352C77BE6E00681882 /* Ciudad.swift in Sources */,
+				2980ED332C77BE6700681882 /* Clima.swift in Sources */,
+				2980ED372C77BE7500681882 /* ClimaCiudad.swift in Sources */,
 				2980ED092C77A75F00681882 /* ClimaApp.swift in Sources */,
+				2980ED402C77E7AB00681882 /* CoreLocationHandler.swift in Sources */,
+				2980ED3B2C77BF7100681882 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +461,7 @@
 				DEVELOPMENT_TEAM = Q9PHSMFDMD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Demostracion en el curso";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +491,7 @@
 				DEVELOPMENT_TEAM = Q9PHSMFDMD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Demostracion en el curso";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

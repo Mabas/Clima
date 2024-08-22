@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct ClimaApp: App {
+	var locationManager = LocationManager()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+					MainView(viewModel: MainViewModel())
         }
     }
 }
